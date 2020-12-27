@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-26T05:20:09.944Z",
+        "line": 3,
+        "name": "User is able to Open the browser, navigate to the URL and Search for Product",
+        "description": "",
+        "id": "e-commerce-project-web-site-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6147000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User opened browser",
+            "match": {
+              "location": "StepDefs.HealthChecks.user_opened_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13497000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigated to the home application url",
+            "match": {
+              "location": "StepDefs.HealthChecks.user_navigated_to_the_home_application_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\r\n\tat StepDefs.HealthChecks.user_search_for_product(HealthChecks.java:44)\r\n\tat ✽.User Search for product \"mobile\"(file:///D:/Testing/Cucumber_Framework/src/test/resources/Features/HealthCheck.feature:6)\r\n",
+              "duration": 150000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User Search for product \"mobile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mobile\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefs.HealthChecks.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Search Result page is displayed",
+            "match": {
+              "location": "StepDefs.HealthChecks.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "E-commerce Project Web Site Health Check",
+    "description": "",
+    "id": "e-commerce-project-web-site-health-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/HealthCheck.feature",
+    "tags": []
+  }
+]
