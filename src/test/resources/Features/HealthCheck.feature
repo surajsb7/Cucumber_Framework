@@ -11,10 +11,3 @@ Feature: E-commerce Project Web Site Health Check
     And User navigated to the home application url
     When User Search for product "laptop"
     Then Search Result page is displayed
-    
-    changes are done
-     Scenario: User is able to Open the browser, navigate to the URL and Search for Product
-    Given User opened browser
-    And User navigated to the home application url
-    When User Search for product "electronics"
-    Then Search Result page is displayed
